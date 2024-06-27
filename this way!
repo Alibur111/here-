@@ -1,0 +1,41 @@
+import pygame
+
+window_width = 500
+window_height = 500
+window = pygame.display.set_mode((window_width, window_height))
+pygame.display.set_caption("q-u")
+
+black = (0, 0, 0)
+white = (255, 255, 255)
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+
+
+    pygame.draw.rect(window, white, (10, 10, 10, 50))
+    pygame.draw.rect(window, white, (20, 30, 25, 10))
+    pygame.draw.rect(window, white, (40, 10, 10, 50))
+    pygame.draw.rect(window, white, (65, 30, 5, 30))
+    pygame.draw.rect(window, white, (85, 30, 5, 30))
+    pygame.draw.rect(window, white, (105, 30, 5, 30))
+    pygame.draw.rect(window, white, (65, 30, 45, 5))
+    pygame.draw.rect(window, white, (120, 30, 5, 30))
+    pygame.draw.rect(window, white, (120, 30, 20, 5))
+    pygame.draw.rect(window, white, (120, 55, 20, 5))
+    pygame.draw.rect(window, white, (150, 30, 5, 30))
+    pygame.draw.rect(window, white, (150, 30, 20, 5))
+    pygame.draw.rect(window, white, (150, 55, 20, 5))
+    pygame.draw.rect(window, white, (165, 45, 5, 10))
+    pygame.draw.rect(window, white, (185, 30, 5, 18))
+    pygame.draw.rect(window, white, (185, 45, 20, 5))
+    pygame.draw.rect(window, white, (205, 30, 5, 20))
+    pygame.draw.rect(window, white, (195, 45, 5, 16))
+    window.fill(black)
+
+    pygame.display.flip()
+
+pygame.quit()
